@@ -2,23 +2,15 @@
     import github from "$lib/assets/github.svg";
     import linkedin from "$lib/assets/linkedin.svg";
     import Link from "./Link.svelte";
+    import { footerLinks } from "$lib/utils/links";
 
-    const links = [
-        {
-            title: "Linkedin",
-            link: 'https://no.linkedin.com/in/ben-huy-van-nguyen-6281b2199?original_referer='
-        },
-        {
-            title:"Github",
-            link: 'https://github.com/b1nguy1'
-        },
-    ]
+    
 </script>
 
 <footer>
     <div class="container">
         <div class="footer-content">
-            {#each links as link}
+            {#each footerLinks as link}
             <Link href={link.link}> 
                 {#if link.title === "Github"}
                     <img alt={link.title} src={github} width="50px"/>

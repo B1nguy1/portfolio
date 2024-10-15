@@ -8,3 +8,8 @@ export type Project = {
     description: string;
 }
 
+export type Link = {
+    link?: string;
+    title: string;
+}
+

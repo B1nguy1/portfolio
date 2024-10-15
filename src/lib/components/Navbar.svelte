@@ -1,20 +1,8 @@
 <script lang="ts">
     import Link from "./Link.svelte";
-  
-    type Links = {
-        link?: string;
-        title: string;
-    }
+    import { navigationLinks } from "$lib/utils/links";
 
-    const navigationLinks: Links[] = [
-        {
-            link: "/projects",
-            title: "Projects"
-        },
-        {
-            title: "About me"
-        }
-    ]
+    
 </script>
 
 <nav class="header">
