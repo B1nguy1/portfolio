@@ -1,61 +1,65 @@
 <script lang="ts">
-    interface Props {
-        name: string;
+    interface CardItem {
+        year: string;
+        title: string;
         description?: string;
-        year?: string;
+        company?: string;
     }
 
-    let { name, description, year } = $props();
+    let { year, title, description, company }: CardItem = $props();
 </script>
 
 <div class="card-container">
-    <div class="card-header">
-        <h3 class="card-name">
-            {name}
-        </h3>
-        {#if year}
-            <span class="card-year">
-                {year}
+    <div class="card-year">
+        <span>{year}</span>
+    </div>
+    <h3 class="card-title">
+        {title}
+    </h3>
+    <div class="card-company">
+        {#if company}
+            <span>{company}</span>
+        {/if}
+    </div>
+    <div class="card-description">
+        {#if description}
+            <span>
+                {description}
             </span>
         {/if}
-        <p>
-            {description}
-        </p>
     </div>
 </div>
 
 <style>
     .card-container {
         background: #fff;
-        border-radius: 10px;
-        padding: 1.5rem;
+        padding: 24px;
+        border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
-    .card-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        margin-bottom: 0.75rem;
-        gap: 1rem;
+    .card-year {
+        display: inline-block;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #666;
+        margin-bottom: 0.5rem;
+        padding: 0.25rem 0.75rem;
+        background: #f5f5f5;
+        border-radius: 4px;
     }
-
-    .card-name {
-        margin: 0;
+    .card-title {
+        margin: 0 0 0.25rem 0;
         font-size: 1.25rem;
         font-weight: 600;
         color: #333;
     }
-
-    .card-year {
-        font-size: 0.875rem;
+    .card-company {
         color: #666;
-        font-weight: 500;
-        white-space: nowrap;
+        margin-bottom: 0.5rem;
     }
-
     .card-description {
-        margin: 0;
+        margin: 0.75rem 0 0 0;
         color: #555;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 </style>
