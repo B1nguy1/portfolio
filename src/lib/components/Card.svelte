@@ -1,6 +1,6 @@
 <script lang="ts">
     interface CardItem {
-        year: string;
+        year?: string;
         title: string;
         description?: string;
         company?: string;
