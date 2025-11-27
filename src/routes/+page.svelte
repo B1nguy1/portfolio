@@ -14,7 +14,11 @@
     <p class="subtitle">Frontendutvikler</p>
     <TypeWriter
       texts={[
-        "Yoo! Ben her! Liker å reise, spille padel og løpe. Ville ha en nettside om meg selv egentlig. Det var alt for nå.",
+        `Yoo!
+         Ben her! 
+         Liker å reise, spille padel og løpe. 
+         Ville ha en nettside om meg selv egentlig.
+          Det var alt for nå.`,
       ]}
     />
   </div>
