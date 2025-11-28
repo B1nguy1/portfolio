@@ -15,10 +15,12 @@
     <TypeWriter
       texts={[
         `Yoo!
-         Ben her! 
-         Liker å reise, spille padel og løpe. 
-         Ville ha en nettside om meg selv egentlig.
-          Det var alt for nå.`,
+        Velkommen til min nettside!
+         Jeg er Ben og jobber som frontendutvikler.
+         Liker å bruke fritiden på reising, spille padel eller løpe.
+        Denne nettsiden ble laget av kjedsomhet, men også fordi jeg ville teste
+        ut Cursor.
+        Det var alt for nå.`,
       ]}
     />
   </div>
