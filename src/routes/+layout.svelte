@@ -15,7 +15,12 @@
 </div>
 
 <footer>
-  <p>&copy; 2025. Laget i SvelteKit.</p>
+  <p>
+    Ben Huy Van Nguyen &copy; 2025. <a
+      href="https://no.linkedin.com/in/ben-huy-van-nguyen-6281b2199"
+      style="text-decoration:underline;">LinkedIn</a
+    >
+  </p>
 </footer>
 
 <style>
