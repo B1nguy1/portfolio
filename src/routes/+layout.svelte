@@ -4,10 +4,6 @@
   let { children } = $props();
 </script>
 
-<svelte:head>
-  <title>Ben Huy Van Nguyen - Frontendutvikler</title>
-</svelte:head>
-
 <div class="layout">
   <main>
     {@render children()}
@@ -28,8 +24,6 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: #333;
     background: #fafafa;

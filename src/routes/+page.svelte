@@ -1,10 +1,8 @@
 <script>
   import Timeline from "$lib/components/Timeline.svelte";
   import Card from "$lib/components/Card.svelte";
-  // @ts-ignore
-  import { educations } from "$lib/data/educations.ts";
-  // @ts-ignore
-  import { projects } from "$lib/data/projects.ts";
+  import { educations } from "$lib/data/educations.js";
+  import { projects } from "$lib/data/projects.js";
   import { TypeWriter } from "svelte-typewrite";
 </script>
 
@@ -54,19 +52,11 @@
   }
 
   .hero h1 {
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 800;
+    font-size: 30px;
     margin: 0 0 1rem 0;
-    letter-spacing: -2px;
-    background: linear-gradient(135deg, #333 0%, #666 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
 
   .subtitle {
-    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
-    font-weight: 500;
     color: #666;
     margin: 0 0 2rem 0;
     letter-spacing: 0.5px;
@@ -82,7 +72,6 @@
     text-align: center;
     margin: 0 0 2rem 0;
     color: #333;
-    letter-spacing: -1px;
   }
 
   .projects-grid {
