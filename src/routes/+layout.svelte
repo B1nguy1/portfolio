@@ -1,10 +1,12 @@
 <script>
+  import Navbar from "$lib/components/Navbar.svelte";
   import "../app.css";
 
   let { children } = $props();
 </script>
 
 <div class="layout">
+  <Navbar title={"Ben Huy Van Nguyen"} />
   <main>
     {@render children()}
   </main>
