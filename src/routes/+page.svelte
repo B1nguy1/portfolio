@@ -12,23 +12,21 @@
     <p class="subtitle">Frontendutvikler</p>
     <TypeWriter
       texts={[
-        `Yoo!
-        Velkommen til min nettside!
+        `Hei og 
+        velkommen til min nettside!
          Jeg er Ben og jobber som frontendutvikler.
          Liker å bruke fritiden på reising, spille padel eller løpe.
-        Denne nettsiden ble laget av kjedsomhet, men også fordi jeg ville teste
-        ut Cursor.
         Det var alt for nå.`,
       ]}
     />
   </div>
 
-  <section id="timeline-section" class="section">
+  <section id="educations-section" class="section">
     <h2>Utdanninger</h2>
     <Timeline items={educations} />
   </section>
 
-  <section class="section">
+  <section id="projects-section" class="section">
     <h2>Prosjekter</h2>
     <div class="projects-grid">
       {#each projects as project}
@@ -74,6 +72,7 @@
     color: #333;
   }
 
+  /* TODO: fix this */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -90,11 +89,6 @@
     .section {
       padding: 3rem 1rem;
       margin-bottom: 4rem;
-    }
-
-    .projects-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
     }
   }
 </style>
