@@ -1,6 +1,6 @@
 import { client } from "$lib/sanity/client.js"
 
-const EDUCATIONS_QUERY = `*[_type == "education"] {
+const EDUCATIONS_QUERY = `*[_type == "education"] | order(endYear desc) {
     startYear,
     endYear,
     title,
