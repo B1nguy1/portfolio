@@ -1,8 +1,6 @@
 <script>
   import Timeline from "$lib/components/Timeline.svelte";
   import Card from "$lib/components/Card.svelte";
-  import { educations } from "$lib/data/educations.js";
-  import { projects } from "$lib/data/projects.js";
   import { TypeWriter } from "svelte-typewrite";
 
   let { data } = $props();
@@ -31,8 +29,8 @@
   <section id="projects-section" class="section">
     <h2>Prosjekter</h2>
     <div class="projects-grid">
-      {#each projects as project}
-        <Card title={project.name} description={project.description} />
+      {#each data.projects as project}
+        <Card title={project.title} description={project.description} />
       {/each}
     </div>
   </section>
