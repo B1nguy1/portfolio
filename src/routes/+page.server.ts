@@ -9,7 +9,6 @@ const EDUCATIONS_QUERY = `*[_type == "education"] {
 }`
 
 export async function load() {
-    const educations = await client.fetch(EDUCATIONS_QUERY)
-    console.log(educations);
+    const educations = await client.fetch(EDUCATIONS_QUERY);
     return { educations }
 }
