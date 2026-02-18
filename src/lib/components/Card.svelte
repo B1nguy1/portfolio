@@ -1,18 +1,22 @@
 <script lang="ts">
     interface CardItem {
-        year?: string;
+        startYear?: number;
+        endYear?: number;
         title: string;
         description?: string;
         company?: string;
     }
 
-    let { year, title, description, company }: CardItem = $props();
+    let { startYear, endYear, title, description, company }: CardItem =
+        $props();
 </script>
 
 <div class="card-container">
-    <div class="card-year">
-        <span>{year}</span>
-    </div>
+    {#if startYear && endYear}
+        <div class="card-year">
+            <span>{startYear} - {endYear}</span>
+        </div>
+    {/if}
     <h3 class="card-title">
         {title}
     </h3>

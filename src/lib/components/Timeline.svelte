@@ -2,7 +2,8 @@
     import Card from "./Card.svelte";
 
     interface TimelineItem {
-        year: string;
+        startYear?: number;
+        endYear?: number;
         title: string;
         description?: string;
         company?: string;
@@ -20,7 +21,8 @@
         <div class="timeline-item">
             <div class="timeline-marker"></div>
             <Card
-                year={item.year}
+                startYear={item.startYear}
+                endYear={item.endYear}
                 title={item.title}
                 description={item.description}
                 company={item.company}

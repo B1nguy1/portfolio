@@ -4,6 +4,8 @@
   import { educations } from "$lib/data/educations.js";
   import { projects } from "$lib/data/projects.js";
   import { TypeWriter } from "svelte-typewrite";
+
+  let { data } = $props();
 </script>
 
 <main>
@@ -23,7 +25,7 @@
 
   <section id="educations-section" class="section">
     <h2>Utdanninger</h2>
-    <Timeline items={educations} />
+    <Timeline items={data.educations} />
   </section>
 
   <section id="projects-section" class="section">
