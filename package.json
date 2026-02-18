@@ -45,6 +45,7 @@
 		"svelte"
 	],
 	"dependencies": {
+		"@sanity/client": "^7.15.0",
 		"svelte-typewrite": "^3.0.0"
 	}
 }
