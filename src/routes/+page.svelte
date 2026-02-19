@@ -8,8 +8,6 @@
 
 <main>
   <div class="hero">
-    <h1>Ben Huy Van Nguyen</h1>
-    <p class="subtitle">Frontendutvikler</p>
     <TypeWriter
       texts={[
         `Hei og 
@@ -49,17 +47,6 @@
     padding: 0 1rem;
   }
 
-  .hero h1 {
-    font-size: 30px;
-    margin: 0 0 1rem 0;
-  }
-
-  .subtitle {
-    color: #666;
-    margin: 0 0 2rem 0;
-    letter-spacing: 0.5px;
-  }
-
   .section {
     max-width: 1200px;
     margin: 0 auto 6rem auto;
@@ -72,7 +59,6 @@
     color: #333;
   }
 
-  /* TODO: fix this */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
